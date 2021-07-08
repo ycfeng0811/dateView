@@ -34,7 +34,7 @@ class DateViewController: UIViewController {
             .rx
             .tap
             .subscribe { [weak self] _ in
-                self?.dismiss(animated: true, completion: nil)
+                self?.dismiss(animated: true)
             }.disposed(by: bag)
 
         sureButton
